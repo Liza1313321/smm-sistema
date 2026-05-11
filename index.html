@@ -1059,6 +1059,113 @@
     margin-top: 4px;
   }
 
+  .module-topics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+  }
+
+  .topic-block {
+    background: var(--cream);
+    border-radius: 14px;
+    padding: 16px 18px;
+    border: 1px solid var(--soft);
+  }
+
+  .topic-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+  }
+
+  .topic-items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .topic-items span {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #0F0C09;
+    padding: 60px 40px 40px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--cream);
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .footer-logo em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .footer-desc {
+    font-size: 13px;
+    color: rgba(250,247,242,0.4);
+    line-height: 1.7;
+  }
+
+  .footer-col h4 {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  .footer-col a, .footer-col p {
+    display: block;
+    font-size: 13px;
+    color: rgba(250,247,242,0.5);
+    text-decoration: none;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    transition: color 0.2s;
+  }
+
+  .footer-col a:hover { color: var(--accent); }
+
+  .footer-bottom {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+    color: rgba(250,247,242,0.25);
+  }
+
   /* ANIMATIONS */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
@@ -1199,8 +1306,35 @@
         <div class="module-content">
           <div class="module-week">Неделя 1</div>
           <h3>Фундамент и позиция SMM-специалиста</h3>
-          <p>Почему за SMM готовы платить, как ценить себя и свой труд, что такое SMM и какие задачи берёт на себя специалист. Визуал, копирайтинг, сторис, Reels и воронки</p>
-          <span class="module-result">→ Ты понимаешь свою ценность и перестаёшь себя обесценивать</span>
+          <p>Здесь ты перестаёшь обесценивать себя и понимаешь почему за SMM платят хорошие деньги. Разбираем что именно делает специалист, как устроен рынок и почему сейчас лучшее время войти в профессию</p>
+          <div class="module-topics">
+            <div class="topic-block">
+              <div class="topic-title">Твоя ценность на рынке</div>
+              <div class="topic-items">
+                <span>— почему маркетинг сейчас важен</span>
+                <span>— почему за SMM готовы платить</span>
+                <span>— как ценить себя и свой труд</span>
+              </div>
+            </div>
+            <div class="topic-block">
+              <div class="topic-title">Достижение целей</div>
+              <div class="topic-items">
+                <span>— какие шаги помогают достигать целей</span>
+                <span>— каким правилам важно придерживаться</span>
+              </div>
+            </div>
+            <div class="topic-block">
+              <div class="topic-title">Что такое SMM и задачи специалиста</div>
+              <div class="topic-items">
+                <span>— визуал</span>
+                <span>— копирайтинг</span>
+                <span>— оформление сторис</span>
+                <span>— продвижение в Reels</span>
+                <span>— воронка через рилсы</span>
+              </div>
+            </div>
+          </div>
+          <span class="module-result">→ После этого модуля ты знаешь свою ценность и больше не работаешь за копейки</span>
         </div>
       </div>
 
@@ -1208,9 +1342,38 @@
         <div class="module-num">02</div>
         <div class="module-content">
           <div class="module-week">Неделя 2</div>
-          <h3>Упаковка эксперта и контент-стратегия</h3>
-          <p>Упаковка профиля, правильное позиционирование, как выделяться среди конкурентов. Контент-стратегия которая продаёт — без контент-плана и без выгорания</p>
-          <span class="module-result">→ У тебя есть продающая стратегия и образ эксперта</span>
+          <h3>Упаковка и контент</h3>
+          <p>Упаковываем профиль так, чтобы он продавал сам. Строим контент-стратегию которая работает — без контент-плана и без выгорания</p>
+          <div class="module-topics">
+            <div class="topic-block">
+              <div class="topic-title">Упаковка эксперта в соцсетях</div>
+              <div class="topic-items">
+                <span>— упаковка профиля</span>
+                <span>— правильное позиционирование</span>
+                <span>— call to action</span>
+                <span>— как выделяться среди конкурентов</span>
+              </div>
+            </div>
+            <div class="topic-block">
+              <div class="topic-title">Колесо баланса личности</div>
+              <div class="topic-items">
+                <span>— 3 ключевые сферы</span>
+                <span>— как определиться с ведением блога</span>
+              </div>
+            </div>
+            <div class="topic-block">
+              <div class="topic-title">Контент-стратегия</div>
+              <div class="topic-items">
+                <span>— почему контент-план больше не работает</span>
+                <span>— как сделать так, чтобы контент продавал</span>
+                <span>— что сейчас востребовано на рынке</span>
+                <span>— контент из лёгкости</span>
+                <span>— отказ от бесплатных продуктов и начало продаж</span>
+                <span>— экспертный контент без выгорания</span>
+              </div>
+            </div>
+          </div>
+          <span class="module-result">→ После этого модуля у тебя есть образ эксперта и контент который приводит клиентов</span>
         </div>
       </div>
 
@@ -1218,9 +1381,35 @@
         <div class="module-num">03</div>
         <div class="module-content">
           <div class="module-week">Неделя 3</div>
-          <h3>Целевая аудитория, алгоритмы и продукт</h3>
-          <p>Как из фанатов сделать клиентов, как продавать до 90% аудитории, как работают алгоритмы сейчас. Продуктовая матрица и скачок в доходе</p>
-          <span class="module-result">→ Ты чётко знаешь кому и что продаёшь</span>
+          <h3>Аудитория и продукт</h3>
+          <p>Разбираемся кто твой клиент и как говорить с ним так, чтобы он сам хотел купить. Учимся создавать продукты и понимать алгоритмы, чтобы охваты росли, а не падали</p>
+          <div class="module-topics">
+            <div class="topic-block">
+              <div class="topic-title">Портрет целевого клиента</div>
+              <div class="topic-items">
+                <span>— как из подписчиков сделать клиентов</span>
+                <span>— как продавать существующей аудитории</span>
+                <span>— как понимать подписчиков</span>
+              </div>
+            </div>
+            <div class="topic-block">
+              <div class="topic-title">Сегменты целевой аудитории</div>
+              <div class="topic-items">
+                <span>— как продавать до 90% аудитории</span>
+                <span>— как создавать сильные продукты</span>
+              </div>
+            </div>
+            <div class="topic-block">
+              <div class="topic-title">Алгоритмы и продуктовая матрица</div>
+              <div class="topic-items">
+                <span>— как работают алгоритмы сейчас</span>
+                <span>— что влияет на охваты</span>
+                <span>— что продавать</span>
+                <span>— как сделать скачок в доходе</span>
+              </div>
+            </div>
+          </div>
+          <span class="module-result">→ После этого модуля ты точно знаешь кому и что продаёшь</span>
         </div>
       </div>
 
@@ -1228,9 +1417,36 @@
         <div class="module-num">04</div>
         <div class="module-content">
           <div class="module-week">Неделя 4</div>
-          <h3>Визуал, клиенты и продажи</h3>
-          <p>Цепляющие описания Reels, монтаж и оформление сторис. Где искать клиентов, что говорить на собеседовании, как закрывать и брать оплату уверенно</p>
-          <span class="module-result">→ Ты умеешь находить клиентов и брать деньги за работу</span>
+          <h3>Клиенты и деньги</h3>
+          <p>Самое важное — где брать клиентов, что говорить и как закрывать на оплату. Плюс монтаж, визуал и оформление сторис — всё что нужно для работы</p>
+          <div class="module-topics">
+            <div class="topic-block">
+              <div class="topic-title">Описание Reels</div>
+              <div class="topic-items">
+                <span>— как писать цепляющее описание</span>
+                <span>— что должно быть в тексте</span>
+              </div>
+            </div>
+            <div class="topic-block">
+              <div class="topic-title">Монтаж, сторис и визуал</div>
+              <div class="topic-items">
+                <span>— как монтировать</span>
+                <span>— как оформлять сторис</span>
+                <span>— какие приложения использовать</span>
+              </div>
+            </div>
+            <div class="topic-block">
+              <div class="topic-title">Как найти клиента и закрыть на оплату</div>
+              <div class="topic-items">
+                <span>— где искать клиентов</span>
+                <span>— почему решает уверенность</span>
+                <span>— как закрывать клиента</span>
+                <span>— как выстраивать рабочие границы</span>
+                <span>— как брать оплату</span>
+              </div>
+            </div>
+          </div>
+          <span class="module-result">→ После этого модуля ты умеешь находить клиентов и брать деньги за свою работу</span>
         </div>
       </div>
     </div>
@@ -1311,7 +1527,7 @@
           <li><span class="tick">✦</span>Чат курса</li>
           <li><span class="tick">✦</span>Доступ к новостному каналу</li>
         </ul>
-        <a href="https://wa.me/79262411218" class="btn-tariff btn-tariff-outline">Выбрать Базу</a>
+        <a href="https://wa.me/79262411218?text=Хочу%20записаться%20на%20тариф%20БАЗА" class="btn-tariff btn-tariff-outline">Выбрать Базу</a>
       </div>
 
       <div class="tariff tariff-mid">
@@ -1327,7 +1543,7 @@
           <li><span class="tick">✦</span>Разборы аккаунтов участников</li>
           <li><span class="tick">✦</span>Разборы реальных ситуаций</li>
         </ul>
-        <a href="https://wa.me/79262411218" class="btn-tariff btn-tariff-outline">Выбрать тариф</a>
+        <a href="https://wa.me/79262411218?text=Хочу%20записаться%20на%20тариф%20С%20ПОДДЕРЖКОЙ" class="btn-tariff btn-tariff-outline">Выбрать тариф</a>
       </div>
 
       <div class="tariff tariff-top">
@@ -1345,7 +1561,7 @@
           <li><span class="tick">✦</span>Приоритетные разборы</li>
           <li><span class="tick">✦</span>Личное вовлечение Айши на протяжении всего обучения</li>
         </ul>
-        <a href="https://wa.me/79262411218" class="btn-tariff btn-tariff-filled">Выбрать Премиум</a>
+        <a href="https://wa.me/79262411218?text=Хочу%20записаться%20на%20тариф%20ПРЕМИУМ" class="btn-tariff btn-tariff-filled">Выбрать Премиум</a>
       </div>
 
     </div>
@@ -1461,6 +1677,33 @@
     <p class="installment">Доступна рассрочка · Старт 30 мая</p>
   </div>
 </section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">SMM — <em>СИСТЕМА</em></div>
+      <p class="footer-desc">Онлайн-обучение для тех, кто хочет зарабатывать на SMM и выстроить систему в соцсетях</p>
+    </div>
+    <div class="footer-col">
+      <h4>Навигация</h4>
+      <a href="#for-whom">Для кого</a>
+      <a href="#modules">Программа</a>
+      <a href="#tariffs">Тарифы</a>
+      <a href="#aisha">Об Айше</a>
+    </div>
+    <div class="footer-col">
+      <h4>Контакты</h4>
+      <a href="https://www.instagram.com/aishaa.blogg?igsh=MXcxZzg5c25lbHcydA%3D%3D&utm_source=qr" target="_blank">Instagram: @aishaa.blogg</a>
+      <p>ИП Ахмедова Айшат Абдулаевна</p>
+      <p>ИНН: 054609079824</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 SMM — СИСТЕМА · Ахмедова Айшат Абдулаевна · ИНН 054609079824</p>
+    <p>Все права защищены</p>
+  </div>
+</footer>
 
 <script>
   // Intersection Observer for scroll animations
